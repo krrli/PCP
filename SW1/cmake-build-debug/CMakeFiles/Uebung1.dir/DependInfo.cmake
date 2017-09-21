@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/cygdrive/c/Code/PCP/SW1/main.c" "/cygdrive/c/Code/PCP/SW1/cmake-build-debug/CMakeFiles/Uebung1.dir/main.c.o"
+  "/cygdrive/c/Code/PCP/SW1/stack.c" "/cygdrive/c/Code/PCP/SW1/cmake-build-debug/CMakeFiles/Uebung1.dir/stack.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -83,6 +83,12 @@
 		<Unit filename="/cygdrive/c/Code/PCP/SW1/main.c">
 			<Option target="Uebung1"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Code/PCP/SW1/stack.c">
+			<Option target="Uebung1"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Code/PCP/SW1/stack.h">
+			<Option target="Uebung1"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Code/PCP/SW1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

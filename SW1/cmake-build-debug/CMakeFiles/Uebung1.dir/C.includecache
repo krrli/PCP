@@ -9,4 +9,16 @@
 /cygdrive/c/Code/PCP/SW1/main.c
 stdio.h
 -
+stack.h
+/cygdrive/c/Code/PCP/SW1/stack.h
+
+/cygdrive/c/Code/PCP/SW1/stack.c
+stdio.h
+-
+stdlib.h
+-
+stack.h
+/cygdrive/c/Code/PCP/SW1/stack.h
+
+/cygdrive/c/Code/PCP/SW1/stack.h
 

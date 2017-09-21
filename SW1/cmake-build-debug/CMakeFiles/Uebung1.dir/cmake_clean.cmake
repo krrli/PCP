@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Uebung1.dir/main.c.o"
+  "CMakeFiles/Uebung1.dir/stack.c.o"
   "Uebung1.pdb"
   "Uebung1.exe"
   "libUebung1.dll.a"
