@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/Uebung1.dir/main.c.o  -o Uebung1.exe -Wl,--out-implib,libUebung1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
