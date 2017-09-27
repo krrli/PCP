@@ -3,20 +3,19 @@
 
 int main() {
 
-
     // Uebung 1
-    /*
+
     printNumbersGoto(7);
     printf("= printNumbersGoto(7)\n");
     printNumbersFor(7);
     printf("= printNumbersFor(7)\n");
     printNumbersRecursiveFunction(7);
-    printf("= printNumbersRecursiveFunction(7)\n");
-    */
+    printf("= printNumbersRecursiveFunction(7)\n\n");
+
 
     // Uebung 2
     stack myStack = init();
-    /*
+
     print(myStack);
     top(myStack);
     myStack = push(42, myStack);
@@ -30,7 +29,7 @@ int main() {
     element e = top(myStack);
     printf("top element is %i\n", e);
     print(myStack);
-    */
+
 
     printf("size(myStack) = %i\n", size(myStack));
     printf("isEmpty(myStack) = %i\n", isEmpty(myStack));
