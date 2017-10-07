@@ -31,4 +31,10 @@ father(X,Y) :- parent(X,Y), male(X).
 sibling(X,Y) :- parent(Z,X), parent(Z,Y).
 
 % ------ uebung 1c) --------
-grandmother(X,Y) :- mother(Z,Y), mother(X,Z).
+grandmother(X,Y) :- mother(Z,Y), parent(X,Z).
+
+% ------ uebung 1d) --------
+offspring(X,Y) :- parent(Y,X).
+offspring(X,Y) :-
+    parent(Z,X),
+    offspring(Z,Y).

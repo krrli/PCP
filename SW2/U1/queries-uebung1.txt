@@ -29,10 +29,20 @@ mother(mary, X).
 % true.
  sibling(mia,fred).
  
+ 
+ 
  % % % % % % % % % % % % % % % % % % % % % %
 % % % % % % % %  Uebung 1c) % % % % % % % %
 % % % % % % % % % % % % % % % % % % % % % %
 
-% s grosi vo de Ann
-% X = mary
-grandmother(X,ann).
+grandmother(X,ann). % X= mary
+grandmother(liz, X) % X= sue; X=jim
+grandmother(X, jim) % X= mary; X=liz
+
+
+
+% % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % %  Uebung 1d) % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % %
+offspring(ann,mary). % true.
+offspring(sue,X). % 
