@@ -46,3 +46,34 @@ grandmother(X, jim) % X= mary; X=liz
 % % % % % % % % % % % % % % % % % % % % % %
 offspring(ann,mary). % true.
 offspring(sue,X). % 
+
+% % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % %  Uebung 3 % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % %
+solution(L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11,L12).
+
+% % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % %  Uebung 4 % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % %
+colors(LU,NW,OW,SZ,UR,ZG).
+
+% % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % %  Uebung 5 % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % %
+% liz mother X ==> x=tom; X=joe
+op(1150,xfx, mother).
+liz mother X.
+
+op(1150,xfx,offspring).
+ann offspring mike.
+
+% % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % %  Uebung 7% % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % %
+mult(3,4,X).
+mult(3,4,11).
+mult(3,0,X).
+mult(0,3,0).
+mult(77,1,X).
+mult(3,4,X).
+
