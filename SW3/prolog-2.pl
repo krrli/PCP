@@ -73,5 +73,18 @@ del([X|T], X,  T).
 del([H|T], X, [H|L]):-
 	del(T,X,L).
 
+% ------ uebung 3c) ------
+% mem_d(a,[a,b,c]).
+% mem_d(x,[a,b,c]).
+% wäge del([a,b,c], b, L) --> L existiert nur, wenn b in liste drin war!
+mem_d(X,L):-
+	del(L,X,_).
 
+% ------ uebung 3d) ------
+% rev_acc([a,b,c,d], [], L).
+% L = [d,c,b,a]
 
+%Initial: Akkumulator = leere Liste
+rev_acc([],A,A).
+rev_acc([X|L],A,R):-
+	rev_acc(L, [X|A], R). % der Liste den Head wegnehmen & henderzi ipacke
