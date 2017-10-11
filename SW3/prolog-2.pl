@@ -45,3 +45,29 @@ fak(N, F) :-
 fak_clear() :-
 	retractall(fak_as(_,_)),
 	write("Hinweis: Alle gespeicherten Werte wurden gelöscht.").
+
+% ------ uebung 3a) ------
+% add_tail soll ein Element X am Ende einer Liste L einfügen ==> L1
+% entsteht.
+% 1. liste erzeugen mit nur X am Schluss.
+% add_tail(X,L,L1):-
+%	L9 = X,
+%	L8 = L,
+%	L1 = [L8 | L9].
+%
+
+add(X, L, [X|L]).
+
+% element vorne anhängseln
+add_tail(X, [], [X]).
+add_tail(X,[H|T],[H|L]) :-
+	add_tail(X,T,L).
+
+% ------ uebung 3b) ------
+% löscht Element X aus Liste L, L1 entsteht.
+
+% Element im Kopf, da weglöschen.
+del(
+del(L, X, L1):-
+
+
