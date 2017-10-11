@@ -88,3 +88,11 @@ mem_d(X,L):-
 rev_acc([],A,A).
 rev_acc([X|L],A,R):-
 	rev_acc(L, [X|A], R). % der Liste den Head wegnehmen & henderzi ipacke
+
+% ------ uebung 3e) ------
+rev(L,R):-
+	rev_acc(L,[], R).
+
+% ------ uebung 4) ------
+
+
