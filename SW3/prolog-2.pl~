@@ -58,12 +58,19 @@ fak_clear() :-
 
 add(X, L, [X|L]).
 
+% element vorne anhängseln
 add_tail(X, [], [X]).
 add_tail(X,[H|T],[H|L]) :-
 	add_tail(X,T,L).
 
 % ------ uebung 3b) ------
 % löscht Element X aus Liste L, L1 entsteht.
-del(L, X, L1):-
+% del([a,b,c], c, L).
+
+% Element im Kopf, da weglöschen.
+del([X|T], X,  T).
+del([H|T], X, [H|L]):-
+	del(T,X,L).
+
 
 

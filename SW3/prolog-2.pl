@@ -65,9 +65,13 @@ add_tail(X,[H|T],[H|L]) :-
 
 % ------ uebung 3b) ------
 % löscht Element X aus Liste L, L1 entsteht.
+% del([a,b,c], c, L).
 
 % Element im Kopf, da weglöschen.
-del(
-del(L, X, L1):-
+del([X|T], X,  T).
+% Element nicht im Kopf, rest döreachere & det lösche
+del([H|T], X, [H|L]):-
+	del(T,X,L).
+
 
 
