@@ -94,5 +94,43 @@ rev(L,R):-
 	rev_acc(L,[], R).
 
 % ------ uebung 4) ------
+p_ohni(X):- a(X).  % r1
+p_ohni(X):- b(X), c(X). % r2
+p_ohni(X):- d(X).  % r3
+
+p(X):- a(X).
+p(X):- b(X), !, c(X).
+p(X):- d(X).
+a(1).
+b(2).
+b(3).
+c(2).
+c(3).
+d(4).
+
+% ------ uebung 5) ------
+warn(T):-
+	T < 80,
+	write('Temperatur ok'),
+	!.
+warn(T):-
+	T < 100,
+	write('Temperatur sehr warm'),
+	!.
+warn(_):-
+	write('Temperatur z heiss!').
 
 
+% ------ uebung 6) ------
+% L = [_, _, _], mem(a, L), mem(b, L), mem(c, L).
+
+mem(X, [X | _]).      % tail doesn’t matter
+mem(X, [_| Tail]) :-
+	mem(X, Tail). % head doesn’t matter
+
+memp(A, B, C, L):-
+	L = [_, _, _],
+	mem(A, L),
+	mem(B, L),
+	mem(C, L),
+	!.
