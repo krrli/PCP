@@ -67,6 +67,8 @@ add_tail(X,[H|T],[H|L]) :-
 % löscht Element X aus Liste L, L1 entsteht.
 % del([a,b,c], c, L).
 
+% Wenn d liste läär esch.
+del([],X,[]).
 % Element im Kopf, da weglöschen.
 del([X|T], X,  T).
 % Element nicht im Kopf, rest döreachere & det lösche
@@ -111,13 +113,13 @@ d(4).
 % ------ uebung 5) ------
 warn(T):-
 	T < 80,
-	write('Temperatur ok'),
-	!.
+	write('Temperatur ok').
 warn(T):-
+	T >= 80,
 	T < 100,
-	write('Temperatur sehr warm'),
-	!.
-warn(_):-
+	write('Temperatur sehr warm').
+warn(T):-
+	T >= 100,
 	write('Temperatur z heiss!').
 
 

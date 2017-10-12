@@ -37,7 +37,8 @@ grandmother(X,Y) :- mother(X,Z), parent(Z,Y).
 offspring(X,Y) :- parent(Y,X).
 offspring(X,Y) :-
     parent(Z,X),
-    offspring(Z,Y).
+    parent(Y,Z).
+    %offspring(Z,Y).
 
 % ------ uebung 3 --------
 word(n,e,u). word(t,o,p). word(t,o,t). word(b,r,o,t).
@@ -82,7 +83,7 @@ mult(_,0,0).
 mult(0,_,0).
 
 mult(X,Y,Z):-
-    X >1
+    X >1,
     X2 is X-1,
     mult(X2,Y,Z2),
     Z is Z2 + Y.
