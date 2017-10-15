@@ -34,3 +34,30 @@ set_difference([H|Set1], Set2, SetDifference):-
     set_difference(Set1, Set2, SetDifference).
 
 set_difference([], _, []).
+
+
+
+% ------ uebung 3a) --------
+% Tocher ist 15, Mutter 3x so alt. In wievielen Jahren wird die Mutter
+% nur noch doppelt so alt sein wie ihre Tochter?
+
+% use_module(library(clpr)).
+% {T=15, M=3*T, (M=2*T+X)}
+
+
+% ------ uebung 3b) --------
+% DONALD + GERALD = ROBERT
+
+:- use_module(library(clpfd)).
+
+roebi([D,O,N,A,L,D] + [G,E,R,A,L,D] = [R,O,B,E,R,T]) :-
+        Vars = [D,O,N,A,L,G,E,R,B,T],
+        Vars ins 0..9,
+        all_distinct(Vars),
+             D*100000 + O*10000 + N*1000 + A*100 + L*10 + D +
+             G*100000 + E*10000 + R*1000 + A*100 + L*10 + D #=
+             R*100000 + O*10000 + B*1000 + E*100 + R*10 + T,
+        D #\= 0, G #\= 0, R #\= 0,
+        label(Vars).
+
+% roebi(As + Bs = Cs).
