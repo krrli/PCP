@@ -12,10 +12,13 @@ fib_clp(N, F) :-
 	  N1 = N-1,
 	  N2 = N-2,
 	  F1 >= N1-1,              % neue Abbruchbedingung: nte Fibonaccizahl muss grösser als N sein.
-	  F2 >= N2-1
+	  F2 >= N2-1		   % differänz zwösche N und F => 1, mach witer.
 	},
 	fib_clp(N1, F1),
 	fib_clp(N2, F2).
+
+% Bsp. F = 17711, N wird nie grösser als 17711, dann wird abgebrochen.
+
 
 
 fib_clpbesserer(N,F):- {N = 0, F = 0}.
@@ -31,7 +34,7 @@ fib_clpbesserer(N,F):-
 	 N1 = N-1,
 	 N2 = N-2,
 	 F >= N
-	}
+	},
 	fib_clpbesserer(N1,F1),
 	fib_clpbesserer(N2,F2).
 
