@@ -44,3 +44,12 @@
 ; (delete 'f (list 1 2 3 4))
 
 (define (delete item a-list)
+  (cond
+    ((empty? a-list) empty)
+    ((equal? item (first a-list)) (rest a-list))
+    (else (cons (first a-list) (delete item (rest a-list))))
+  )
+)
+
+
+ 
