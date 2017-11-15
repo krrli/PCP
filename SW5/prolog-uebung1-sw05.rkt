@@ -134,7 +134,7 @@
   )
 )
 
-; 7a) so wies in den folien steht: nein, a und b sind nicht definiert
+; 7a) so wies in der aufgabe steht: nein, a und b sind nicht definiert
 ; 7b)
 ; (doubleCheck 2 3)
 ; gibt 9.
@@ -142,6 +142,8 @@
 ; gibt 12
 ; (doubleCheck 3 3)
 ; gibt -4
+
+; ==> Ausdruck gültig, a und b müssen halt definiert sein.
 
 
 ; ------------ uebung 8 ------------
@@ -167,19 +169,22 @@
 
 ; ------------ uebung 9 ------------
 (define-struct man(alter geschlecht oberschaenkellaengi))
-(define schnauz (make-man 45 "m" 50))
-(define keiSchnauz (make-man 30 "w" 49))
-(define oepis(make-man 35 "mw" 30))
+(define schnauz (make-man 45 "m" 50))        ; definition daten
+(define keiSchnauz (make-man 30 "w" 49))     ; definition daten
+(define oepis(make-man 35 "mw" 30))          ; definition daten
 
 (define (blength m)
   (cond
     ((string=? (man-geschlecht m) "m") ; du besch es männli
      (- (+ 69.089 (* 2.238 (man-oberschaenkellaengi m))) (* 0.06 (man-alter m)))
      )
+    ; weitere condition: >= 30 gilt diese berechnung, für <30: 0.06cm pro jahr nicht abziehen
     ((string=? (man-geschlecht m) "w") ; du besch es wiibli
      (- (+ 61.412 (* 2.317 (man-oberschaenkellaengi m))) (* 0.06 (man-alter m)))
      )
     (else "don't know"))) ; bi der weiss mers ned
+
+; mit "man-oberschaenkellaengi m" wird die oberschenkellänge des man objekts geholt (m as param)
 
 ; (blength schnauz)
 ; (blength keiSchnauz)
